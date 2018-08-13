@@ -20,9 +20,10 @@ class App extends Component {
         return (
             <div>
                 <Header />
-                <div>
+                <div className='logo'>
                     <img src='/images/CSULogo.png' />
                 </div>
+                <h1>Content</h1>
             </div>
         );
     }
