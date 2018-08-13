@@ -3,7 +3,7 @@
 const React = require('react');
 const Component = React.Component;
 
-// Import style
+// Import global style
 require('./style/app.less');
 
 /**
@@ -13,7 +13,7 @@ class App extends Component {
     // Main container render function
     render() {
         return (
-            <div className='main'>
+            <div>
                 <h1>Main Container</h1>
             </div>
         );
