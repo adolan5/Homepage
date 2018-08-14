@@ -25,7 +25,6 @@ class App extends Component {
                 <div className='logo'>
                     <img src='/images/CSULogo.png' />
                 </div>
-                <h1>Content</h1>
             </div>
         );
     }
