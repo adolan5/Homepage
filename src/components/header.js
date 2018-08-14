@@ -12,8 +12,11 @@ require('../style/components/header.less');
 class Header extends Component {
     render() {
         return (
-            <div className='header'>
-                <h1>CSU</h1>
+            <div className='headerbar'>
+                <img src='/images/HeaderLogo.png' />
+                <div className='headertext'>
+                    <h1> Andy Dolan</h1>
+                </div>
             </div>
         );
     }

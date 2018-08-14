@@ -1,7 +1,10 @@
 @green: #1E4D2B;
 
 /* Style for the header bar */
-.header {
+.headerbar {
+  /* Have items appear on the same "line" */
+  display: flex;
+  flex-wrap: wrap;
   background: @green;
   margin: 0;
   height: auto;
@@ -9,6 +12,24 @@
   overflow: hidden;
 }
 
-.header h1 {
+/* CSU Logo in header */
+.headerbar img {
+  height: 70px;
+}
+
+.headertext {
+  /* Margins for header text, so that it is (somewhat) vertically centered */
+  margin: auto;
+  margin-left: 0;
+  /* A border to create a nice divide */
+  border-left: 2px solid;
+  border-color: white;
+}
+
+/* The actual header part of the header text */
+.headertext h1 {
   margin: 0;
+  color: white;
+  /* Some space between left border and start of text */
+  padding-left: 11px;
 }
