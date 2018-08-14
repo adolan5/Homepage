@@ -8,12 +8,21 @@ body {
   font-family: sans-serif;
 }
 
-.logo {
-  position: absolute;
-  top: 70px;
-  left: 0;
+/* App container styllings */
+.app {
+  position: relative;
+  height: calc(100vh - 70px);
 }
 
+/* CSU logo background */
+.logo {
+  /* Absolute position so we can draw on top of it */
+  position: absolute;
+  /* Take the full height of the app container */
+  height: 100%;
+}
+
+/* Actual CSU logo; don't let it get super blown up */
 .logo img {
   max-width: 95%;
   max-height: 100%;
