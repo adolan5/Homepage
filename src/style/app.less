@@ -11,15 +11,15 @@ body {
 /* App container styllings */
 .app {
   position: relative;
-  height: calc(100vh - 70px);
+  height: 100vh;
 }
 
 /* CSU logo background */
 .logo {
   /* Absolute position so we can draw on top of it */
   position: absolute;
-  /* Take the full height of the app container */
-  height: 100%;
+  /* Initial height is a bit less than the app container */
+  height: calc(100% - 75px);
 }
 
 /* Actual CSU logo; don't let it get super blown up */
