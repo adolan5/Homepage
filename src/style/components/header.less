@@ -10,13 +10,15 @@
   height: auto;
   min-height: 70px;
   overflow: hidden;
+
+  /* CSU Logo in header */
+  img {
+    height: 70px;
+  }
 }
 
-/* CSU Logo in header */
-.headerbar img {
-  height: 70px;
-}
 
+/* Actual text part of the header bar */
 .headertext {
   /* Margins for header text, so that it is (somewhat) vertically centered */
   margin: auto;
@@ -24,18 +26,18 @@
   /* A border to create a nice divide */
   border-left: 2px solid;
   border-color: white;
-}
 
-/* The actual header part of the header text */
-.headertext h1 {
-  margin: 0;
-  color: white;
-  /* Some space between left border and start of text */
-  padding-left: 11px;
-}
+  /* The actual header part of the header text */
+  h1 {
+    margin: 0;
+    color: white;
+    /* Some space between left border and start of text */
+    padding-left: 11px;
+  }
 
-/* Link component of header text */
-/* No underline, please! */
-.headertext a:link, .headertext a:visited {
-  text-decoration: none;
+  /* Link component of header text */
+  /* No underline, please! */
+  a:link {
+    text-decoration: none;
+  }
 }
