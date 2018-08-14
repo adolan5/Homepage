@@ -13,9 +13,13 @@ class Header extends Component {
     render() {
         return (
             <div className='headerbar'>
-                <img src='/images/HeaderLogo.png' />
+                <a href='https://www.colostate.edu/' target='_blank'>
+                    <img src='/images/HeaderLogo.png' alt='CSU Logo'/>
+                </a>
                 <div className='headertext'>
-                    <h1> Andy Dolan</h1>
+                    <a href={ location.origin }>
+                        <h1>Andy Dolan</h1>
+                    </a>
                 </div>
             </div>
         );
