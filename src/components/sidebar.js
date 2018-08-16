@@ -12,13 +12,10 @@ class Sidebar extends Component {
     render() {
         return (
             <div className='sidebar'>
+                <h1>Andy Dolan</h1>
+                <h2>Graduate Student @ CSU</h2>
             </div>
         );
-    }
-
-    doThing() {
-        console.log('Did thing');
-        console.log(document.getElementById('logo').classList[0].toggle('collapsed'));
     }
 }
 
