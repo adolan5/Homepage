@@ -21,9 +21,11 @@ class App extends Component {
         return (
             <div className='app'>
                 <Header />
-                <Sidebar />
-                <div className='logo'>
-                    <img src='/images/CSULogo.png' />
+                <div className='main'>
+                    <Sidebar />
+                    <div className='logo'>
+                        <img src='/images/CSULogo.png' />
+                    </div>
                 </div>
             </div>
         );

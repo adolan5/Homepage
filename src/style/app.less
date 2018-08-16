@@ -8,24 +8,20 @@ body {
   font-family: sans-serif;
 }
 
-/* App container styllings */
-.app {
-  position: relative;
-  height: 100vh;
-}
-
 /* CSU logo background */
 .logo {
   /* Absolute position so we can draw on top of it */
-  position: absolute;
-  /* Offset to make room for sidebar */
-  left: 200px;
   /* Initial height is a bit less than the app container */
   height: calc(100% - 75px);
+
+  /* Actual CSU logo; don't let it get super blown up */
+  img {
+    max-width: 95%;
+    max-height: 100%;
+  }
 }
 
-/* Actual CSU logo; don't let it get super blown up */
-.logo img {
-  max-width: 95%;
-  max-height: 100%;
+.main {
+  display: flex;
+  position: relative;
 }
