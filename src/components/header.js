@@ -17,8 +17,8 @@ class Header extends Component {
                     <img src='/images/HeaderLogo.png' alt='CSU Logo'/>
                 </a>
                 <div className='headertext'>
-                    <a href={ location.origin }>
-                        <h1>Andy Dolan</h1>
+                    <a href='http://cs.colostate.edu' target='_blank'>
+                        <h1>Computer Science</h1>
                     </a>
                 </div>
             </div>
