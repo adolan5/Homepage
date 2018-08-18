@@ -8,13 +8,35 @@ body {
   font-family: sans-serif;
 }
 
-.logo {
-  position: absolute;
-  top: 70px;
-  left: 0;
+/* App container settings */
+.app {
+  height: 100vh auto;
+  min-height: 100vh;
 }
 
-.logo img {
-  max-width: 100%;
-  max-height: 100%;
+/* CSU logo background */
+.logo {
+  /* Absolute position so we can draw on top of it */
+  position: absolute;
+  /* Initial height is a bit less than the app container */
+  height: calc(100% - 75px);
+
+  /* Actual CSU logo; don't let it get super blown up */
+  img {
+    max-width: 95%;
+    max-height: 100%;
+  }
+}
+
+/* The content and background logo container */
+.main {
+  display: flex;
+  position: relative;
+  height: 100%;
+  min-height: inherit;
+}
+
+/* Actual content container */
+.content {
+  height: 100%;
 }
