@@ -6,6 +6,10 @@ const Component = React.Component;
 // Import components
 const Header = require('./components/header.js');
 const Sidebar = require('./components/sidebar.js');
+const ContentContainer = require('./components/contentcontainer.js');
+
+// Import data/content sources
+const aboutMe = require('./data/aboutme.json');
 
 // Import global style
 require('./style/app.less');
@@ -23,10 +27,11 @@ class App extends Component {
                 <Header />
                 <div className='main'>
                     <Sidebar />
-                    <div className='content'>
+                    <div className='contentwrapper'>
                         <div className='logo'>
                             <img src='/images/CSULogo.png' />
                         </div>
+                        <ContentContainer data={ aboutMe } />
                     </div>
                 </div>
             </div>
