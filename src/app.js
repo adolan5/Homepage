@@ -8,6 +8,9 @@ const Header = require('./components/header.js');
 const Sidebar = require('./components/sidebar.js');
 const ContentContainer = require('./components/contentcontainer.js');
 
+// Import data/content sources
+const aboutMe = require('./data/aboutme.json');
+
 // Import global style
 require('./style/app.less');
 
@@ -28,7 +31,7 @@ class App extends Component {
                         <div className='logo'>
                             <img src='/images/CSULogo.png' />
                         </div>
-                        <ContentContainer data={ require('./data/aboutme.json') } />
+                        <ContentContainer data={ aboutMe } />
                     </div>
                 </div>
             </div>
