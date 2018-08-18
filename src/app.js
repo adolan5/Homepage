@@ -24,7 +24,7 @@ class App extends Component {
                 <Header />
                 <div className='main'>
                     <Sidebar />
-                    <div>
+                    <div className='contentwrapper'>
                         <div className='logo'>
                             <img src='/images/CSULogo.png' />
                         </div>
