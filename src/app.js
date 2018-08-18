@@ -26,11 +26,13 @@ class App extends Component {
             <div className='app'>
                 <Header />
                 <div className='main'>
-                    <Sidebar />
                     <div className='contentwrapper'>
                         <div className='logo'>
                             <img src='/images/CSULogo.png' />
                         </div>
+                        <img id='headshot' src='/images/headshot.jpg' />
+                        <h1>Andy Dolan</h1>
+                        <h2>Graduate Student at CSU</h2>
                         <ContentContainer data={ aboutMe } />
                     </div>
                 </div>
