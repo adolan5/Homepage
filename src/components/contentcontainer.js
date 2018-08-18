@@ -12,7 +12,8 @@ class ContentContainer extends Component {
     render() {
         return (
             <div className='contentcontainer'>
-                <h1>About Me</h1>
+                <h1><i>About Me</i></h1>
+                <p>Information about me goes here.</p>
             </div>
         );
     }
