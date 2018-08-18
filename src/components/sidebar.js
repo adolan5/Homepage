@@ -14,7 +14,7 @@ class Sidebar extends Component {
             <div className='sidebar'>
                 <img src='/images/headshot.jpg' alt='Andy Dolan' />
                 <h1>Andy Dolan</h1>
-                <h2>Graduate Student @ CSU</h2>
+                <h2>Graduate Student at CSU</h2>
             </div>
         );
     }

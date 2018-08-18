@@ -14,11 +14,16 @@ class Header extends Component {
         return (
             <div className='headerbar'>
                 <a href='https://www.colostate.edu/' target='_blank'>
-                    <img src='/images/HeaderLogo.png' alt='CSU Logo'/>
+                    <picture>
+                        <source id='smallLogo' srcSet='/images/signature-mobile.svg' media='(max-width: 484px)' />
+                        <source srcSet='/images/signature-stacked.svg' media='(max-width: 785px)' />
+                        <source srcSet='/images/signature-oneline.svg' />
+                        <img src='/images/signature-mobile.svg' />
+                    </picture>
                 </a>
                 <div className='headertext'>
-                    <a href={ location.origin }>
-                        <h1>Andy Dolan</h1>
+                    <a href='http://cs.colostate.edu' target='_blank'>
+                        <h1>Computer Science</h1>
                     </a>
                 </div>
             </div>
