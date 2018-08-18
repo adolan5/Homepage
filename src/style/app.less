@@ -1,0 +1,60 @@
+/* Color definitions */
+@cream: #fffcdb;
+
+/* Global stylings */
+body {
+  background: @cream;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+/* App container settings */
+.app {
+  height: 100vh auto;
+  min-height: 100vh;
+  text-align: center;
+}
+
+/* CSU logo background */
+.logo {
+  /* Absolute position so we can draw on top of it */
+  position: absolute;
+  /* Initial height is a bit less than the app container */
+  height: calc(100% - 75px);
+  z-index: -1;
+
+  /* Actual CSU logo; don't let it get super blown up */
+  img {
+    float: left;
+    max-width: 95%;
+    max-height: 100%;
+  }
+}
+
+/* The content and background logo container */
+.main {
+  display: flex;
+  position: relative;
+  height: 100%;
+  min-height: inherit;
+}
+
+/* Wrapper around main content divs */
+.contentwrapper {
+  overflow: hidden;
+  width: 100%;
+
+  #headshot {
+    display: block;
+    margin: auto;
+    width: 10%;
+    min-width: 200px;
+    margin-top: 20px;
+    border: 2px solid black;
+    z-index: 999;
+  }
+
+  h1, h2 {
+    margin: 0;
+  }
+}

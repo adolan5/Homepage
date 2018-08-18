@@ -33,7 +33,7 @@ module.exports = {
                 test: /\.less$/,
                 // Notice how we used 'loader' in the rule above; that's because
                 // we weren't using an array of loaders, as we are doing here
-                use: [ 'style-loader', 'less-loader' ]
+                use: [ 'style-loader', 'css-loader', 'less-loader' ]
             }
         ]
     },
