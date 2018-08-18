@@ -15,10 +15,10 @@ class Header extends Component {
             <div className='headerbar'>
                 <a href='https://www.colostate.edu/' target='_blank'>
                     <picture>
-                        <source srcSet='/images/signature-mobile.svg' media='(max-width: 484px)' />
+                        <source id='smallLogo' srcSet='/images/signature-mobile.svg' media='(max-width: 484px)' />
                         <source srcSet='/images/signature-stacked.svg' media='(max-width: 785px)' />
                         <source srcSet='/images/signature-oneline.svg' />
-                        <img src='/images/signature-oneline.svg' />
+                        <img src='/images/signature-mobile.svg' />
                     </picture>
                 </a>
                 <div className='headertext'>
