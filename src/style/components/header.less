@@ -4,7 +4,7 @@
 .headerbar {
   /* Have items appear on the same "line" */
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   background: @green;
   margin: 0;
   min-height: 70px;
@@ -13,6 +13,9 @@
   /* CSU Logo in header */
   img {
     height: 70px;
+    margin: 10px;
+    margin-right: 0;
+    max-width: 100%;
   }
 }
 
@@ -21,22 +24,18 @@
 .headertext {
   /* Margins for header text, so that it is (somewhat) vertically centered */
   margin: auto;
-  margin-left: 0;
-  /* A border to create a nice divide */
-  border-left: 2px solid;
-  border-color: white;
+  margin-left: 12px;
+  border-left: 2px solid white;
 
   /* The actual header part of the header text */
   h1 {
-    margin: 0;
     color: white;
-    /* Some space between left border and start of text */
-    padding-left: 11px;
     /* Style specific text */
     font-weight: lighter;
     text-transform: uppercase;
-    font-size: 24px;
+    font-size: 22px;
     letter-spacing: 0.11em;
+    padding-left: 12px;
   }
 
   /* Link component of header text */
