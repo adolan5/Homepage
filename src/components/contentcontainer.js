@@ -9,11 +9,17 @@ require('../style/components/contentcontainer.less');
  * Container for some content.
  */
 class ContentContainer extends Component {
+
+    /**
+     * Render function.
+     * Note that the props we construct with includes a 'data' object,
+     * which will contain "header" and "text" keys and associated values.
+     */
     render() {
         return (
             <div className='contentcontainer'>
-                <h1><i>About Me</i></h1>
-                <p>Information about me goes here.</p>
+                <h1><i>{ this.props.data.header }</i></h1>
+                <p>{ this.props.data.text }</p>
             </div>
         );
     }

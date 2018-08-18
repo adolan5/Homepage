@@ -28,7 +28,7 @@ class App extends Component {
                         <div className='logo'>
                             <img src='/images/CSULogo.png' />
                         </div>
-                        <ContentContainer />
+                        <ContentContainer data={ require('./data/aboutme.json') } />
                     </div>
                 </div>
             </div>
