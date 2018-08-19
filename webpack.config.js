@@ -34,6 +34,11 @@ module.exports = {
                 // Notice how we used 'loader' in the rule above; that's because
                 // we weren't using an array of loaders, as we are doing here
                 use: [ 'style-loader', 'css-loader', 'less-loader' ]
+            },
+            // The next rule is for loading assets like images.
+            {
+                test: /\.(png|jpg|svg)$/,
+                loader: 'file-loader'
             }
         ]
     },
@@ -43,10 +48,10 @@ module.exports = {
     // public/dist/bundle.js
     output: {
         // path is the absolute location of the bundle
-        path: path.resolve(__dirname, 'public/dist'),
+        path: path.resolve(__dirname, 'public/dist/'),
         // publicPath is the logical location of application assets, relative
         // to the server root address.
-        publicPath: 'public/dist',
+        publicPath: 'dist/',
         filename: 'bundle.js'
     },
 
